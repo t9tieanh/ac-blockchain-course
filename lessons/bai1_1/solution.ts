@@ -10,5 +10,11 @@ export type Block = {
 
 // ✍️ TODO: Viết hàm tại đây
 export function isValidBlock(block: Block): boolean {
-  return false; // Chỉnh lại logic
+  const dataToHash = 
+    block.index +
+    block.timestamp +
+    JSON.stringify(block.transactions) +
+    block.previous_hash;
+
+  return block.current_hash === crypto.createHash("sha256").update(dataToHash).digest("hex");
 }
