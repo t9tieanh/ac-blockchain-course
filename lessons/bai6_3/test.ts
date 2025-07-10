@@ -6,7 +6,7 @@ async function main() {
   const abi = [
     ""
   ];
-  const contractAddress = "0x41d0Ad4E6227062B59CA673B418Fc00E3A2d10Cf"; // Replace with your contract address
+  const contractAddress = "0x29435B82B9876C15Ab54Ac21d6F2B551730e2AA6"; // Replace with your contract address
   const contract = new ethers.Contract(contractAddress, abi, provider);
 
   /**
