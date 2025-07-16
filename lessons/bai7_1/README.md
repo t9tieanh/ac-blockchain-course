@@ -23,11 +23,4 @@
 - Kế thừa `Ownable` để dùng `onlyOwner`
 - Hàm `_mint()` thực hiện mint token
 - Hàm `balanceOf()` trả về số dư
-
----
-
-## 🧪 Chạy lệnh
-
-```bash
-npx hardhat deploy --network sepolia --tags deploy
-```
+- Gửi token qua `transfer()`
